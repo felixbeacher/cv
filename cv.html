@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix Beacher, PhD — ATS-Optimized CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --text: #111827;
+      --muted: #4b5563;
+      --accent: #0f172a;
+      --border: #d1d5db;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: #f3f4f6;
+      line-height: 1.5;
+      font-size: 10.5pt;
+    }
+
+    .toolbar {
+      max-width: 820px;
+      margin: 1.5rem auto 0;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .toolbar a,
+    .toolbar button {
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.55rem 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .toolbar a {
+      color: var(--text);
+      background: #fff;
+      border: 1px solid var(--border);
+    }
+
+    .toolbar button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 1.25rem auto 3rem;
+      background: #fff;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      margin: 0 0 0.2rem;
+      font-size: 20pt;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      font-size: 11.5pt;
+      font-weight: 600;
+      color: #374151;
+      margin: 0 0 0.45rem;
+    }
+
+    .contact-line {
+      margin: 0;
+      font-size: 9.5pt;
+      color: var(--muted);
+    }
+
+    .contact-line a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    h2 {
+      font-size: 11pt;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.25rem;
+      margin: 1.35rem 0 0.65rem;
+    }
+
+    p {
+      margin: 0 0 0.6rem;
+    }
+
+    .skills-list {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+
+    .skills-list li {
+      margin-bottom: 0.35rem;
+    }
+
+    .role {
+      margin-bottom: 1rem;
+    }
+
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .role-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .role-dates {
+      font-size: 9.5pt;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .role-org {
+      font-weight: 600;
+      color: #374151;
+      font-size: 10pt;
+      margin-bottom: 0.35rem;
+    }
+
+    ul.bullets {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+
+    ul.bullets li {
+      margin-bottom: 0.28rem;
+    }
+
+    .pub-subhead {
+      font-weight: 700;
+      font-size: 10pt;
+      margin: 0.75rem 0 0.35rem;
+      color: #1f2937;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        font-size: 10pt;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .page {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      @page {
+        margin: 1.4cm 1.6cm;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html">&larr; Back to Website</a>
+    <button type="button" onclick="window.print()">Print / Save as ATS PDF</button>
+  </div>
+
+  <main class="page">
+    <header>
+      <h1>FELIX BEACHER, PhD</h1>
+      <p class="subtitle">Clinical Data Scientist &amp; Medical AI Strategist</p>
+      <p class="contact-line">
+        London, UK &nbsp;|&nbsp; +44 (0)7482 142054 &nbsp;|&nbsp;
+        <a href="mailto:felixbeacher@gmail.com">felixbeacher@gmail.com</a> &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/felixbeacher">https://www.linkedin.com/in/felixbeacher</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Clinical Data Scientist and AI Strategist with 20+ years of experience spanning machine learning, medical imaging, precision medicine, and clinical trial optimization. Proven track record developing predictive ML models for Phase III clinical trial outcomes, advising international M&amp;A due diligence in radiology AI, and leading FDA-, EMA-, and MHRA-facing research programmes. Combines deep quantitative and qualitative research expertise with commercial leadership (35% revenue growth) and scientific communication as a published author (20+ peer-reviewed papers) and host of <em>The Medical AI Podcast</em>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Core Competencies</h2>
+      <ul class="skills-list">
+        <li><strong>Data Science &amp; AI:</strong> Python, Machine Learning, Predictive Modelling, Statistical Modelling, Biostatistics, Clinical Trial Analytics, Precision Medicine, Medical Imaging &amp; Radiology AI, Quantitative &amp; Qualitative Research</li>
+        <li><strong>Clinical Trials &amp; Regulatory:</strong> Phase I–III Clinical Trial Design &amp; Management, Trial Optimization, Endpoint &amp; Outcome Prediction, Randomized Controlled Trials (RCTs), CRO &amp; Academic Collaboration, Regulatory Strategy &amp; Liaison (FDA, EMA, MHRA)</li>
+        <li><strong>Commercial &amp; Leadership:</strong> Healthtech &amp; Digital Health Strategy, M&amp;A Technical Due Diligence, Market Intelligence, Cross-Functional Team Leadership, Strategic Partnerships, P&amp;L &amp; Revenue Growth, Scientific Communication</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Independent Healthtech &amp; Medical AI Consultant</span>
+          <span class="role-dates">2020 – 2021, 2023 – Present</span>
+        </div>
+        <div class="role-org">Healthtech Consulting</div>
+        <ul class="bullets">
+          <li>Advise expert networks and market intelligence firms (including GLG and Signify Research) on medical AI, diagnostic imaging markets, and digital health strategy.</li>
+          <li>Conduct technical due diligence and product evaluation for international teleradiology AI acquisitions.</li>
+          <li>Developed machine learning models for clinical trial outcome prediction, publishing the first peer-reviewed AI model forecasting Phase III prostate cancer trial outcomes (<em>Algorithms</em>, 2021).</li>
+          <li>Host <em>The Medical AI Podcast</em>, translating emerging clinical AI, LLM, and regulatory developments for industry and clinical audiences.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Head of Healthcare Tech</span>
+          <span class="role-dates">2021 – 2023</span>
+        </div>
+        <div class="role-org">Informa PLC — London, UK</div>
+        <ul class="bullets">
+          <li>Directed global healthcare technology and radiology AI market intelligence research, advising enterprise medtech and AI vendors on commercial strategy.</li>
+          <li>Led and mentored a team of analysts covering the global medical imaging and diagnostic AI market.</li>
+          <li>Forged strategic industry partnerships to drive commercial growth and market positioning.</li>
+          <li>Expanded analyst operations into the US and China, growing team revenue by 35%.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Research Director</span>
+          <span class="role-dates">2014 – 2020</span>
+        </div>
+        <div class="role-org">PMI R&amp;D — Switzerland</div>
+        <ul class="bullets">
+          <li>Directed FDA- and EMA-facing scientific research programmes supporting regulatory submissions for a major consumer health product.</li>
+          <li>Managed cross-functional research teams, overseeing line management, study execution, and regulatory compliance.</li>
+          <li>Designed and led quantitative and qualitative research programmes investigating strategies for shifting consumer behaviour.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-header">
+          <span class="role-title">Clinical Neuroscience Researcher</span>
+          <span class="role-dates">2000 – 2014</span>
+        </div>
+        <div class="role-org">Institute of Psychiatry (King's College London), BSMS &amp; LCNeuro (New York)</div>
+        <ul class="bullets">
+          <li>Led diagnostic and neuroimaging research programmes across Alzheimer's disease, Down syndrome, autism, and stress disorders across academic and CRO environments.</li>
+          <li>Managed randomized, placebo-controlled clinical drug trials, including a Vitamin E trial in Down syndrome (published via American Academy of Neurology, 2016).</li>
+          <li>Coordinated regulatory liaison and trial compliance with the FDA and MHRA.</li>
+          <li>Authored 20 peer-reviewed publications in leading journals including the <em>British Journal of Psychiatry</em>, <em>NeuroImage</em>, and <em>Journal of Neurodevelopmental Disorders</em>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Publications &amp; Thought Leadership</h2>
+      <div class="pub-subhead">Peer-Reviewed Scientific Publications</div>
+      <ul class="bullets">
+        <li><strong>Beacher, F. et al. (2021).</strong> Machine Learning Predicts Outcomes of Phase III Clinical Trials for Prostate Cancer. <em>Algorithms</em>. (First published AI model forecasting Phase III trial outcomes)</li>
+        <li><strong>Clinical Trial Publication (2016).</strong> Management of a randomized, placebo-controlled clinical trial on Vitamin E in people with Down syndrome. <em>American Academy of Neurology</em>.</li>
+        <li><strong>Beacher, F. et al. (2014).</strong> 1H-MRS study comparing hippocampal Glx concentration between Down Syndrome individuals with and without Alzheimer's disease. <em>Journal of Neurodevelopmental Disorders</em>.</li>
+        <li><strong>Beacher, F. et al. (2013).</strong> Dementia in Down's syndrome. <em>British Journal of Psychiatry</em>.</li>
+        <li><strong>Additional Research (2000 – 2014):</strong> 20+ peer-reviewed technical papers on Alzheimer's disease, autism, and stress in <em>British Journal of Psychiatry</em>, <em>NeuroImage</em>, and related journals.</li>
+      </ul>
+
+      <div class="pub-subhead">Industry Analysis &amp; Medical AI Commentary</div>
+      <ul class="bullets">
+        <li><strong>My Friend Asked ChatGPT to Diagnose Her Symptoms. Here's How It Went.</strong> <em>AI Business</em> (2023).</li>
+        <li><strong>The Regulation of Medical AI in the UK.</strong> <em>AI Business</em> (2022).</li>
+        <li><strong>The Promise and Perils of AI-Powered Home Ultrasound Devices.</strong> <em>AI Business</em> (2022).</li>
+        <li><strong>Precision Medicine and the Big Pharma Paradox.</strong> <em>AI Business</em> (2022).</li>
+        <li><strong>Medical AI: What Are the Attitudes of Imaging Practitioners?</strong> <em>AuntMinnie</em> (2022).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="bullets">
+        <li><strong>PhD, Clinical Neuroscience</strong> — Institute of Psychiatry, King's College London</li>
+        <li><strong>MSc, Psychology</strong> — University of Sussex</li>
+        <li><strong>BSc, Economics</strong> — Durham University</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
