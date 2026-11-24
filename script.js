@@ -23,6 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Scroll-reveal animation
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
+    );
+    revealEls.forEach((el) => observer.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add('visible'));
+  }
+
   // Publication category filter
   const filterBtns = document.querySelectorAll('.filter-btn');
   const pubCards = document.querySelectorAll('.pub-card');
@@ -42,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const categories = (card.dataset.categories || '').split(' ');
         if (filter === 'all' || categories.includes(filter)) {
           card.classList.remove('hidden');
+          card.classList.add('visible');
         } else {
           card.classList.add('hidden');
         }
